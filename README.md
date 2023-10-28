@@ -14,6 +14,7 @@ wget -c https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/3.0.0/sratoolkit.3.0.0-ubuntu
 ```
 ```bash
 tar -zxvf sratoolkit.3.0.0-ubuntu64.tar.gz
+```
 ```bash
 bwa index chr9.fa
 ```
