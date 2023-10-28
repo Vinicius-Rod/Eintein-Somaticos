@@ -2,9 +2,9 @@
 Exercício de Somáticos - Vinicius Garcia Rodolfo
 
 # Instalar softwares
-sratoolkit, bwa, samtools
+sratoolkit, bwa, samtools, bedtools
 ``` bash
-brew install sratoolkit bwa samtools
+brew install sratoolkit bwa samtools bedtools
 ```
 ```bash
 pip install parallel-fastq-dump
