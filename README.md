@@ -55,6 +55,12 @@ samtools faidx chr9.fa
 NOME=WP312; Biblioteca=Nextera; Plataforma=illumina;
 bwa mem -t 10 -M -R "@RG\tID:$NOME\tSM:$NOME\tLB:$Biblioteca\tPL:$Plataforma" chr9.fa SRR8856724_1.fastq.gz SRR8856724_2.fastq.gz | samtools view -F4 -Sbu -@2 - | samtools sort -m4G -@2 -o WP312_sorted.bam
 ```
+```bash
+time samtools rmdup WP312_sorted.bam WP312_sorted_rmdup_F4.bam
+```
+```bash
+time samtools index WP312_sorted_rmdup_F4.bam
+```
 
 Remover duplicatas de PCR
 ```bash
