@@ -2,7 +2,7 @@
 Exercício de Somáticos - Vinicius Garcia Rodolfo
 
 # Instalar softwares
-SRATOOLKIT BWA SAMTOOLS
+sratoolkit, bwa, samtools
 ``` bash
 brew install sratoolkit bwa samtools
 ```
