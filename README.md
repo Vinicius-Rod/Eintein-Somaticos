@@ -18,9 +18,6 @@ tar -zxvf sratoolkit.3.0.0-ubuntu64.tar.gz
 ```bash
 export PATH=$PATH://workspace/somaticoEP2/sratoolkit.3.0.0-ubuntu64/bin/
 ```
-```bash
-echo "Aexyo" | sratoolkit.3.0.0-ubuntu64/bin/vdb-config -i
-```
 
 ## Instalar GATK
 ```bash
