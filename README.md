@@ -26,3 +26,12 @@ wget -c https://github.com/broadinstitute/gatk/releases/download/4.2.2.0/gatk-4.
 ```bash
 unzip gatk-4.2.2.0.zip
 ```
+
+##Baixar arquivos
+```bash
+time parallel-fastq-dump --sra-id SRR8856724 \
+--threads 10 \
+--outdir ./ \
+--split-files \
+--gzip
+```
