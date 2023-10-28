@@ -2,6 +2,7 @@
 Exercício de Somáticos
 
 # Instalar softwares
+SRATOOLKIT BWA SAMTOOLS
 ``` bash
 brew install sratoolkit bwa samtools
 ```
