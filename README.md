@@ -41,3 +41,10 @@ chr9 hg19
 ```bash
 wget -c https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr9.fa.gz
 ```
+```bash
+gunzip chr9.fa.gz
+```
+```bash
+samtools faidx chr9.fa
+```
+
