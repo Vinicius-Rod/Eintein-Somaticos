@@ -1,5 +1,5 @@
 # Eintein-Somaticos
-Exercício de Somáticos
+Exercício de Somáticos - Vinicius Garcia Rodolfo
 
 # Instalar softwares
 SRATOOLKIT BWA SAMTOOLS
@@ -37,7 +37,7 @@ time parallel-fastq-dump --sra-id SRR8856724 \
 --split-files \
 --gzip
 ```
-chr9 hg19
+chr9 - hg19
 ```bash
 wget -c https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr9.fa.gz
 ```
