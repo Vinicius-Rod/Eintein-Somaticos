@@ -28,10 +28,16 @@ unzip gatk-4.2.2.0.zip
 ```
 
 ## Baixar arquivos
+
+WP312
 ```bash
 time parallel-fastq-dump --sra-id SRR8856724 \
 --threads 10 \
 --outdir ./ \
 --split-files \
 --gzip
+```
+chr9 hg19
+```bash
+wget -c https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr9.fa.gz
 ```
