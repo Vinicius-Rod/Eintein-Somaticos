@@ -62,8 +62,3 @@ time samtools rmdup WP312_sorted.bam WP312_sorted_rmdup_F4.bam
 time samtools index WP312_sorted_rmdup_F4.bam
 ```
 
-Remover duplicatas de PCR
-```bash
-samtools rmdup WP312_sorted.bam WP312_sorted_rmdup.bam
-```
-
