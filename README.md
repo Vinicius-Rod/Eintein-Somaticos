@@ -51,7 +51,7 @@ samtools faidx chr9.fa
 ```
 
 
-## Alinhamento
+# Alinhamento
 ```bash
 NOME=WP312; Biblioteca=Nextera; Plataforma=illumina;
 bwa mem -t 10 -M -R "@RG\tID:$NOME\tSM:$NOME\tLB:$Biblioteca\tPL:$Plataforma" chr9.fa SRR8856724_1.fastq.gz SRR8856724_2.fastq.gz | samtools view -F4 -Sbu -@2 - | samtools sort -m4G -@2 -o WP312_sorted.bam
