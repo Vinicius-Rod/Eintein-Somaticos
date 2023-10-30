@@ -73,7 +73,7 @@ bedtools merge -i WP312_sorted_rmdup.bed > WP312_sorted_rmdup_merged.bed
 bedtools sort -i WP312_sorted_rmdup_merged.bed > WP312_sorted_rmdup_merged_sorted.bed
 ```
 
-# Cobertura Média
+## Cobertura Média
 ```bash
 bedtools coverage -a WP312_sorted_rmdup_merged_sorted.bed \
 -b WP312_sorted_rmdup.bam -mean \
