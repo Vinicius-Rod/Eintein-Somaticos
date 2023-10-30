@@ -17,7 +17,7 @@ tar -zxvf sratoolkit.3.0.0-ubuntu64.tar.gz
 ```
 
 
-## Instalar GATK
+## Instalar GATK4
 ```bash
 wget -c https://github.com/broadinstitute/gatk/releases/download/4.2.2.0/gatk-4.2.2.0.zip
 ```
