@@ -64,7 +64,6 @@ wget -c  https://storage.googleapis.com/gatk-best-practices/somatic-b37/af-only-
 ```bash
 wget -c  https://storage.googleapis.com/gatk-best-practices/somatic-b37/af-only-gnomad.raw.sites.vcf.idx
 ```
-```bash
 
 
 
