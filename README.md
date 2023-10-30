@@ -25,6 +25,7 @@ wget -c https://github.com/broadinstitute/gatk/releases/download/4.2.2.0/gatk-4.
 unzip gatk-4.2.2.0.zip
 ```
 
+
 ## Download dos arquivos
 
 WP312
