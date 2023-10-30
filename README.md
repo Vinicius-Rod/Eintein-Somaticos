@@ -36,6 +36,7 @@ time parallel-fastq-dump --sra-id SRR8856724 \
 --split-files \
 --gzip
 ```
+
 chr9 - hg19
 ```bash
 wget -c https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr9.fa.gz
@@ -49,6 +50,22 @@ bwa index chr9.fa
 ```bash
 samtools faidx chr9.fa
 ```
+
+Referencias
+```bash
+wget -c https://storage.googleapis.com/gatk-best-practices/somatic-b37/Mutect2-WGS-panel-b37.vcf
+```
+```bash
+wget -c https://storage.googleapis.com/gatk-best-practices/somatic-b37/Mutect2-WGS-panel-b37.vcf.idx
+```
+```bash
+wget -c  https://storage.googleapis.com/gatk-best-practices/somatic-b37/af-only-gnomad.raw.sites.vcf
+```
+```bash
+wget -c  https://storage.googleapis.com/gatk-best-practices/somatic-b37/af-only-gnomad.raw.sites.vcf.idx
+```
+```bash
+
 
 
 # Alinhamento
