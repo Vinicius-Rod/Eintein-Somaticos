@@ -2,7 +2,7 @@
 
 
 # Eintein-Somaticos
-Exercício de Somáticos - Vinicius Garcia Rodolfo
+Exercício Somáticos - Vinicius Garcia Rodolfo
 
 # Instalar softwares
 ## sratoolkit, bwa, samtools, bedtools
