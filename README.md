@@ -55,7 +55,6 @@ samtools faidx chr9.fa
 ```
 
 #### Gerar arquivo .dict
-```
 ```bash
 ./gatk-4.2.2.0/gatk CreateSequenceDictionary -R chr9.fa -O chr9.dict
 ````
