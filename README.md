@@ -1,6 +1,3 @@
-
-
-
 # Eintein-Somaticos
 Exercício Somáticos - Vinicius Garcia Rodolfo
 
@@ -64,7 +61,7 @@ samtools faidx chr9.fa
 ./gatk-4.2.2.0/gatk ScatterIntervalsByNs -R chr9.fa -O chr9.interval_list -OT ACGT
 ```
 
-Referencias
+### Referencias
 ```bash
 wget -c https://storage.googleapis.com/gatk-best-practices/somatic-b37/Mutect2-WGS-panel-b37.vcf
 ```
@@ -90,7 +87,8 @@ samtools rmdup WP312_sorted.bam WP312_sorted_rmdup.bam
 ```
 ```bash
 samtools index WP312_sorted_rmdup.bam
-````
+```
+
 # Cobertura
 ```bash
 bedtools bamtobed -i WP312_sorted_rmdup.bam > WP312_sorted_rmdup.bed
