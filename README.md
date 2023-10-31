@@ -1,4 +1,4 @@
-[![Gitpod ready-to-code](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/Vinicius-Rod/Eintein-Somaticos)
+
 
 
 # Eintein-Somaticos
