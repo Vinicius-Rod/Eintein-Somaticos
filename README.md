@@ -118,3 +118,17 @@ awk -F "\t" '{if($4>=20){print}}' \
 ./gatk-4.2.2.0/gatk BedToIntervalList -I WP312_coverageBed20x.bed \
 -O WP312_coverageBed20x.interval_list -SD chr9.dict
 ```
+
+# GATK4 - CalculateContamination
+```bash
+./gatk-4.2.2.0/gatk GetPileupSummaries \
+	-I WP312_sorted_rmdup_F4.bam  \
+	-V af-only-gnomad.hg38.vcf.gz \
+	-L WP312_coverageBed20x.interval_list \
+	-O WP312.table
+```
+```bash
+./gatk-4.2.2.0/gatk CalculateContamination \
+-I WP312.table \
+-O WP312.contamination.table
+```
