@@ -60,6 +60,10 @@ samtools faidx chr9.fa
 ./gatk-4.2.2.0/gatk CreateSequenceDictionary -R chr9.fa -O chr9.dict
 ````
 
+### Gerar interval_list do chr9
+```bash
+./gatk-4.2.2.0/gatk ScatterIntervalsByNs -R chr9.fa -O chr9.interval_list -OT ACGT
+```
 
 Referencias
 ```bash
