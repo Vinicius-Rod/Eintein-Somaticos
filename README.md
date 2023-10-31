@@ -52,6 +52,7 @@ bwa index chr9.fa
 ```
 ```bash
 samtools faidx chr9.fa
+```
 
 #### Gerar arquivo .dict
 ```
