@@ -100,16 +100,21 @@ bedtools merge -i WP312_sorted_rmdup.bed > WP312_sorted_rmdup_merged.bed
 bedtools sort -i WP312_sorted_rmdup_merged.bed > WP312_sorted_rmdup_merged_sorted.bed
 ```
 
-## Cobertura Média
+# Cobertura Média
 ```bash
 bedtools coverage -a WP312_sorted_rmdup_merged_sorted.bed \
 -b WP312_sorted_rmdup.bam -mean \
 > WP312_coverageBed.bed
 ```
 
-## Filtro por total de reads >=20
+# Filtro por total de reads >=20
 ```
 cat WP312_coverageBed.bed | \
 awk -F "\t" '{if($4>=20){print}}' \
 > WP312_coverageBed20x.bed
+```
+# Converter Bed para Interval_list
+```bash
+./gatk-4.2.2.0/gatk BedToIntervalList -I WP312_coverageBed20x.bed \
+-O WP312_coverageBed20x.interval_list -SD chr9.dict
 ```
