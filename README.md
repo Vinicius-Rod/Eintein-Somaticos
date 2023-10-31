@@ -134,7 +134,7 @@ grep  "^9" af-only-gnomad.raw.sites.vcf |  awk '{print("chr"$0)}' >> af-only-gno
 # GATK4 - CalculateContamination
 ```bash
 ./gatk-4.2.2.0/gatk GetPileupSummaries \
-	-I WP312_sorted_rmdup_F4.bam  \
+	-I WP312_sorted_rmdup.bam  \
 	-V af-only-gnomad.hg38.vcf.gz \
 	-L WP312_coverageBed20x.interval_list \
 	-O WP312.table
