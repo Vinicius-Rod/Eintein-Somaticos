@@ -31,7 +31,7 @@ unzip gatk-4.2.2.0.zip
 
 ## Download dos arquivos
 
-WP312
+### WP312
 ```bash
 time parallel-fastq-dump --sra-id SRR8856724 \
 --threads 10 \
@@ -40,7 +40,7 @@ time parallel-fastq-dump --sra-id SRR8856724 \
 --gzip
 ```
 
-chr9 - hg19
+### chr9 - hg19
 ```bash
 wget -c https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr9.fa.gz
 ```
@@ -52,7 +52,13 @@ bwa index chr9.fa
 ```
 ```bash
 samtools faidx chr9.fa
+
+#### Gerar arquivo .dict
 ```
+```bash
+./gatk-4.2.2.0/gatk CreateSequenceDictionary -R chr9.fa -O chr9.dict
+````
+
 
 Referencias
 ```bash
